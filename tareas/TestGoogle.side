@@ -1,0 +1,103 @@
+{
+  "id": "f80af1ef-5bf2-488b-9144-55b50130651a",
+  "version": "1.1",
+  "name": "TestGoogle",
+  "url": "https://espanol.yahoo.com",
+  "tests": [{
+    "id": "c5a7db3e-79b7-4f2c-9a74-5f9e0591d1c3",
+    "name": "Yahoo Search",
+    "commands": [{
+      "id": "5b162948-80ac-460f-aeb7-63318f2bf1be",
+      "comment": "",
+      "command": "open",
+      "target": "/?p=us",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d34d9732-0d34-44eb-82fb-239fd3eb6ae3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac71033e-aad3-45e3-aee3-412511bd7d4e",
+      "comment": "",
+      "command": "type",
+      "target": "id=uh-search-box",
+      "targets": [
+        ["id=uh-search-box", "id"],
+        ["name=p", "name"],
+        ["css=#uh-search-box", "css"],
+        ["css=#uh-search-box", "css:finder"],
+        ["xpath=//input[@id='uh-search-box']", "xpath:attributes"],
+        ["xpath=//td[@id='yui_3_18_0_3_1547922069328_716']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "selenium"
+    }, {
+      "id": "a2ac06d8-5d3c-4fea-b3c5-0ed77d200108",
+      "comment": "",
+      "command": "click",
+      "target": "id=yui_3_18_0_3_1547922069328_709",
+      "targets": [
+        ["id=yui_3_18_0_3_1547922069328_709", "id"],
+        ["css=#yui_3_18_0_3_1547922069328_709", "css"],
+        ["css=#yui_3_18_0_3_1547922069328_709", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_0_3_1547922069328_709']", "xpath:attributes"],
+        ["xpath=//button[@id='uh-search-button']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10b8973e-a6f3-4409-aefb-2ab216f5a2f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=yui_3_10_0_1_1547922075228_606",
+      "targets": [
+        ["id=yui_3_10_0_1_1547922075228_606", "id"],
+        ["linkText=Selenium - Web Browser Automation", "linkText"],
+        ["css=#yui_3_10_0_1_1547922075228_606", "css"],
+        ["css=#yui_3_10_0_1_1547922075228_606", "css:finder"],
+        ["xpath=//a[contains(text(),'Selenium - Web Browser Automation')]", "xpath:link"],
+        ["xpath=//a[@id='yui_3_10_0_1_1547922075228_606']", "xpath:attributes"],
+        ["xpath=//h3[@id='yui_3_10_0_1_1547922075228_607']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://docs.seleniumhq.org/']", "xpath:href"],
+        ["xpath=//li/div/div/h3/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a18a8d4d-d97b-4191-9c9c-820563b4e74e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "win_ser_1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc39df99-6ce5-4ed2-8f60-e67601616df7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Download",
+      "targets": [
+        ["linkText=Download", "linkText"],
+        ["css=a[title=\"Get Selenium\"]", "css"],
+        ["css=#menu_download > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Download')]", "xpath:link"],
+        ["xpath=//li[@id='menu_download']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/download/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "02e9a32d-7c02-423b-a233-b5a4e5641ce7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c5a7db3e-79b7-4f2c-9a74-5f9e0591d1c3"]
+  }],
+  "urls": ["https://espanol.yahoo.com/"],
+  "plugins": []
+}
